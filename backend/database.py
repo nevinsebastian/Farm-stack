@@ -4,7 +4,7 @@ from model import Todo
 #mongoDB driver
 import motor.motor_asyncio
 #conection between database.py and  mongoDB
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://localhost:27017/')
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://localhost:27017')
 database = client.TodoList
 collection = database.todo
 
